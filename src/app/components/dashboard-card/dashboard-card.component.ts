@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-card',
@@ -6,15 +6,15 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./dashboard-card.component.css']
 })
 export class DashboardCardComponent implements OnInit {
-  @Input('totalConfirmed')
-  totalConfirmed=0;
 
+  @Input('totalConfirmed')
+  totalConfirmed;
   @Input('totalDeaths')
-  totalDeaths=0;
+  totalDeaths;
   @Input('totalActive')
-  totalActive=0;
+  totalActive;
   @Input('totalRecovered')
-  totalRecovered=0;
+  totalRecovered;
 
   constructor() { }
 
