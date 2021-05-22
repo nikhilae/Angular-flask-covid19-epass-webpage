@@ -7,6 +7,7 @@ import { DateWiseData } from '../models/date-wise-data';
 @Injectable({
   providedIn: 'root'
 })
+<<<<<<< HEAD
 export class DataServiceService {
 
   private globalDataUrl = `https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/04-17-2020.csv`;
@@ -47,6 +48,13 @@ export class DataServiceService {
       }))
   }
 
+=======
+export class DataServicesService {
+   private globalDataUrl='https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/05-14-2021.csv';
+   //private globalDataUrl='https://raw.githubusercontent.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_daily_reports_us/12-31-2020.csv';
+  constructor( private http: HttpClient) { }
+   
+>>>>>>> 894bb4131aab135bfaee74744dfdaf68f58a4b59
   getGlobalData() {
     return this.http.get(this.globalDataUrl, { responseType: 'text' }).pipe(
       map(result => {
