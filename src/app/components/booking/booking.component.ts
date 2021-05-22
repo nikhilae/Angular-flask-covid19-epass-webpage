@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm, Validators } from '@angular/forms';  
 import { Router } from '@angular/router';
+<<<<<<< HEAD
 
 @Component({
   selector: 'app-booking',
@@ -11,6 +12,14 @@ import { Router } from '@angular/router';
 })
 export class BookingComponent implements OnInit {
  
+=======
+@Component({
+  selector: 'app-booking',
+  templateUrl: './booking.component.html',
+  styleUrls: ['./booking.component.css']
+})
+export class BookingComponent implements OnInit {
+>>>>>>> 1232a84 (Manually merged upstream update)
 
 
   email:string="";
