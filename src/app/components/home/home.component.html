@@ -27,12 +27,12 @@
               <label for='d'>Deaths</label>
           </div>
       </div>
-      <div class="field">
+     <!---- <div class="field">
           <div class="ui radio checkbox">
               <input type="radio" value='r' #r (click)='updateChart(r)' id='r' name="casetype" tabindex="0" class="hidden">
               <label for='r'>Recovered</label>
           </div>
-      </div>
+      </div>-->
       <div class="field">
           <div class="ui radio checkbox">
               <input id='a' #a type="radio" (click)='updateChart(a)' value='a' name="casetype" tabindex="0" class="hidden">
@@ -45,6 +45,7 @@
       <div class="col">
           <google-chart [type]='chart.PieChart' [options]='chart.options' style="width: 100%;" [height]='chart.height' [data]='datatable'></google-chart>
       </div>
+<<<<<<< HEAD
       <div class="col">
           <google-chart [type]='chart.ColumnChart' style="width: 100%;" [options]='chart.options' [height]='chart.height' [data]='datatable'></google-chart>
       </div>
@@ -98,3 +99,7 @@
 </div>
     
 >>>>>>> 894bb4131aab135bfaee74744dfdaf68f58a4b59
+=======
+     
+  </div>
+>>>>>>> 153ebf7 (covid epass)

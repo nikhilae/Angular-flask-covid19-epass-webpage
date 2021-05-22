@@ -1,0 +1,37 @@
+<section>
+    <div class="container-fluid container-states" style="margin:0">
+        <div class="row">
+            <div class="col">
+                
+                <table class="table bord">
+                    <thead class="thead-dark">
+
+                        <tr>
+                            
+                            <th scope="col">name</th>
+                            <th scope="col">Source</th>
+                            <th scope="col">Destination</th>
+
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+
+                       
+                    <tr *ngFor="let item of res.data">
+                        <td>{{item.name}}</td>
+                        <td>{{ item.source }}</td>
+                        <td>{{ item.destination }}</td>
+                        
+                    </tr>
+                     
+                </tbody>
+                </table>
+               
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
