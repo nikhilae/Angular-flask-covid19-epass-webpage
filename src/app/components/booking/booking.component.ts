@@ -2,12 +2,15 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm, Validators } from '@angular/forms';  
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-booking',
   templateUrl: './booking.component.html',
-  styleUrls: ['./booking.component.css']
+  styleUrls: ['./booking.component.css'],
+  
 })
 export class BookingComponent implements OnInit {
+ 
 
 
   email:string="";

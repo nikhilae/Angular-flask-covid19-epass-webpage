@@ -1,23 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { DataServiceService } from 'src/app/services/data-service.service';
 import { GlobalDataSummary } from 'src/app/models/global-data';
 import { DateWiseData } from 'src/app/models/date-wise-data';
 import { merge } from 'rxjs';
 import { map } from 'rxjs/operators';
-=======
-import { Data } from '@angular/router';
-import { GlobalDataSummary } from 'src/app/models/global-data';
-import { DataServicesService } from 'src/app/services/data-service.service';
->>>>>>> 894bb4131aab135bfaee74744dfdaf68f58a4b59
 
 @Component({
-  selector: 'app-countries',
+  selector: 'app-country',
   templateUrl: './countries.component.html',
   styleUrls: ['./countries.component.css']
 })
 export class CountriesComponent implements OnInit {
-<<<<<<< HEAD
 
   data : GlobalDataSummary[];
   countries : string[] = [];
@@ -90,35 +83,6 @@ export class CountriesComponent implements OnInit {
     // console.log(this.selectedCountryData);
     this.updateChart();
     
-=======
-  data:GlobalDataSummary[];
-  countries: string[]=[];
-  totalConfirmed=0;
-  totalActive=0;
-  totalDeaths=0;
-  totalRecovered=0;
-  constructor(private service:DataServicesService) { }
-
-  ngOnInit(): void {
-    this.service.getGlobalData().subscribe(result=>{
-      this.data=result;
-      this.data.forEach(cs=>{
-        this.countries.push(cs.country)
-      })
-    })
-  }
-  updateValues(country:string){
-    console.log(country);
-    this.data.forEach(cs=>{
-      if(cs.country==country){
-        this.totalConfirmed=cs.confirmed;
-        this.totalActive=cs.active;
-        this.totalDeaths=cs.deaths;
-        this.totalRecovered=cs.recovered;
-
-      }
-    })
->>>>>>> 894bb4131aab135bfaee74744dfdaf68f58a4b59
   }
 
 }
